@@ -1,0 +1,50 @@
+Diagram Alur Aplikasi No-Bully
+
+Mulai
+↓
+
+Guru Login / Akses Aplikasi
+↓
+
+Input Data Siswa
+
+Tambah nama siswa
+
+Simpan ke database
+↓
+
+Input Data Relasi per Subjek
+
+Pilih subjek (misalnya: Matematika)
+
+Pilih siswa penilai
+
+Pilih siswa target
+
+Pilih status (suka / tidak suka)
+
+Simpan ke database
+↓
+
+Analisis Data
+
+Hitung total suka/tidak suka per siswa
+
+Identifikasi siswa dengan banyak “tidak suka” (rentan dibully)
+
+Identifikasi siswa yang memberi banyak “tidak suka” (potensi pembuli)
+↓
+
+Tampilkan Hasil ke Guru
+
+Tabel skor siswa
+
+Grafik ranking
+
+Highlight siswa dengan status khusus
+↓
+
+Selesai / Bisa Input Lagi
+
+⚙️ Jadi alurnya kira-kira seperti ini:
+Input siswa → Input relasi → Analisis → Laporan visual untuk guru.

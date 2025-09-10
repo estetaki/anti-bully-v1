@@ -1,0 +1,60 @@
+1. Data (Database Design)
+
+Kamu mau pakai Database.db → SQLite cocok banget buat offline.
+Struktur tabel bisa sederhana:
+
+Tabel siswa
+
+id_siswa (PK) | nama
+
+
+Tabel subjek
+
+id_subjek (PK) | nama_subjek
+
+
+Tabel relasi suka/tidak suka
+
+id (PK) | id_siswa_penginput | id_siswa_target | id_subjek | status
+
+
+status: bisa "suka" = +1, "tidak suka" = -1
+
+2. Analisis
+
+Tujuannya: deteksi siapa rentan dibully dan siapa berpotensi jadi pembuli.
+Kita bisa bikin logika dasar seperti ini:
+
+Rentan dibully → siswa yang menerima banyak tidak suka (negatif tinggi).
+
+Berpotensi membuli → siswa yang memberi banyak tidak suka (aktif menilai negatif orang lain).
+
+Populer / positif → siswa yang menerima banyak suka.
+
+Output bisa berupa:
+
+Ranking siswa berdasarkan skor (positif/negatif).
+
+Indikasi “rentan” kalau skor negatifnya di atas threshold tertentu.
+
+3. Aplikasi (Alur di Streamlit)
+
+Agar guru gampang pakai:
+
+Input data siswa → tambah/edit daftar siswa.
+
+Input data relasi suka/tidak suka → pilih subjek, pilih siswa, lalu tandai suka/tidak suka.
+
+Analisa otomatis → tampilkan daftar siswa dengan skor:
+
+Tabel + grafik (bar chart) untuk visual.
+
+Highlight siswa yang riskan (misalnya warna merah).
+
+👉 Jadi urutannya:
+
+Guru isi data siswa.
+
+Guru isi data relasi per subjek.
+
+Aplikasi analisa & kasih insight.

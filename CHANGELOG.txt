@@ -1,0 +1,11 @@
+# Changelog
+
+## 2025-09-10
+- Penambahan file README.txt, LICENSE.txt, dan CHANGELOG.txt
+- Pemeriksaan bug dan dependensi
+- Struktur folder aplikasi diperjelas
+
+## Versi Sebelumnya
+- Pengembangan fitur utama aplikasi anti-bully
+- Penambahan backup database
+- Penambahan script instalasi otomatis
